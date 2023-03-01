@@ -56,7 +56,42 @@ const ContractUI = ({ contractName }: TContractUIProps) => {
   );
 
   if (!contractAddress) {
-    return <p className="text-2xl">No Contract found!</p>;
+    return (
+      <div className=" col-span-5 grid grid-cols-1 lg:grid-cols-3 gap-10 h-100  p-4 ">
+        <div className="col-span-5 grid grid-cols-1 lg:grid-cols-3 gap-10">
+          <div className="col-span-1 flex flex-col">
+            <div className="bg-base-100 border-base-300 border shadow-md shadow-secondary rounded-3xl px-8 mb-6 space-y-1 py-4">
+              <div className="flex">
+                <div className="flex flex-col gap-1">
+                  <Address address={contractAddress} />
+                  <Address address={contractAddress} />
+                  <Address address={contractAddress} />
+                </div>
+              </div>
+            </div>
+            <div className=" bg-base-300 rounded-3xl p-3 shadow-lg shadow-base-300">
+              <div className=" animate-pulse h-20 bg-slate-300 w-full rounded-3xl  " />
+            </div>
+          </div>
+          <div className="col-span-1 lg:col-span-2 flex flex-col gap-6">
+            <div className="z-10">
+              <div className="bg-base-100 rounded-3xl shadow-md shadow-secondary border border-base-300  overflow-visible flex flex-col">
+                <div className="animate-pulse p-2 h-28 duration-200">
+                  <div className="h-24 bg-slate-300 w-full rounded-3xl " />
+                </div>
+              </div>
+            </div>
+            <div className="z-10">
+              <div className="bg-base-100 rounded-3xl shadow-md shadow-secondary border border-base-300  overflow-visible flex flex-col">
+                <div className="animate-pulse p-2 h-28 duration-200">
+                  <div className="h-24 bg-slate-300 w-full rounded-3xl " />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   return (
