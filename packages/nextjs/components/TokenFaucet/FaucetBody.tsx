@@ -2,7 +2,6 @@ import millify from "millify";
 import React from "react";
 import { useMockTokenBalance, MockToken } from "~~/hooks/scaffold-eth";
 import FaucetButton from "./FaucetButton";
-
 export default function FaucetBody() {
   const batBalance = useMockTokenBalance("Bat");
   const daiBalance = useMockTokenBalance("Dai");
@@ -14,9 +13,6 @@ export default function FaucetBody() {
 
   const tokens = [batBalance, daiBalance, repBalance, usdtBalance, wbtcBalance, wethBalance, zrxBalance];
 
-  //   useScaffoldEventSubscriber("YourContract", "GreetingChange", (greetingSetter, newGreeting, premium, value) => {
-  //     console.log(greetingSetter, newGreeting, premium, value);
-  //   });
   return (
     <tbody>
       {tokens.map(({ balance, tokenName, tokenSymbol }: MockToken, index) => (
