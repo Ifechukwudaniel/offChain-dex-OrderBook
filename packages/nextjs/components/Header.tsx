@@ -6,6 +6,7 @@ import RainbowKitCustomConnectButton from "~~/components/scaffold-eth/RainbowKit
 import { Bars3Icon, BugAntIcon, SparklesIcon } from "@heroicons/react/24/outline";
 import { useRouter } from "next/router";
 import { useOutsideClick } from "~~/hooks/scaffold-eth";
+import { CreditCardIcon } from "@heroicons/react/24/outline";
 
 const NavLink = ({ href, children }: { href: string; children: React.ReactNode }) => {
   const router = useRouter();
@@ -41,15 +42,21 @@ export default function Header() {
         <NavLink href="/">Home</NavLink>
       </li>
       <li>
-        <NavLink href="/debug">
-          <BugAntIcon className="h-4 w-4" />
-          Debug Contracts
+        <NavLink href="/token-faucet">
+          <CreditCardIcon className="h-4 w-4" />
+          Token Faucet
         </NavLink>
       </li>
       <li>
         <NavLink href="/example-ui">
           <SparklesIcon className="h-4 w-4" />
           Example UI
+        </NavLink>
+      </li>
+      <li>
+        <NavLink href="/debug">
+          <BugAntIcon className="h-4 w-4" />
+          Debug Contracts
         </NavLink>
       </li>
     </>
@@ -84,8 +91,7 @@ export default function Header() {
             <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
           </Link>
           <div className="flex flex-col">
-            <span className="font-bold">Scaffold-eth</span>
-            <span className="text-xs">Forkable Ethereum dev stack</span>
+            <span className="font-bold">OffChain Dex</span>
           </div>
         </div>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">{navLinks}</ul>
