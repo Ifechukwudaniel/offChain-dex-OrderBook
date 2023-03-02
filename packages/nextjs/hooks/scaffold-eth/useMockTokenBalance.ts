@@ -11,6 +11,7 @@ export interface MockToken {
   isError: boolean;
   isLoading: boolean;
   tokenAddress: null | string;
+  contractName: string;
 }
 
 export function useMockTokenBalance(contractName: string) {
@@ -49,5 +50,6 @@ export function useMockTokenBalance(contractName: string) {
     tokenName,
     tokenSymbol,
     tokenAddress: deployedContractData?.address,
+    contractName,
   };
 }
