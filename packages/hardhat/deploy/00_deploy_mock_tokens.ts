@@ -23,8 +23,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Bat", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -33,8 +31,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Dai", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -43,8 +39,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Rep", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -53,8 +47,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Usdt", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -63,8 +55,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Wbtc", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -73,8 +63,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Weth", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
@@ -83,8 +71,6 @@ const deployMockToken: DeployFunction = async function (hre: HardhatRuntimeEnvir
 
   await deploy("Zrx", {
     from: deployer,
-    // Contract constructor arguments
-    args: [deployer],
     log: true,
     // autoMine: can be passed to the deploy function to make the deployment process faster on local networks by
     // automatically mining the contract deployment transaction. There is no effect on live networks.
