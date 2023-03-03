@@ -17,7 +17,7 @@ const TokenFaucetPage: NextPage = () => {
             <p className="flex-auto h-10 text-3xl m-0 font-bold ">Ethereum Goerli Faucet</p>
           </div>
           <div className="w-4/6">
-            <p className="text-secondary-content opacity-75 ">
+            <p className="font-sm text-secondary-content opacity-75 ">
               With testnet Faucet you can get free assets to test this limit order protocols. Make sure to switch your
               wallet provider to the appropriate testnet network, select desired asset, and click ‘Faucet’ to get tokens
               transferred to your wallet. The assets on a testnet are not “real,” meaning they have no monetary value.

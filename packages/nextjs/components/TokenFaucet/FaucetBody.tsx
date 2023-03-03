@@ -17,7 +17,7 @@ export default function FaucetBody() {
     <tbody>
       {tokens.map(({ balance, tokenName, tokenSymbol }: MockToken, index) => (
         <tr key={index} className="border-b">
-          <td className="px-6 py-4 whitespace-nowrap text-md font-medium">
+          <td className="p-2 whitespace-nowrap text-md font-medium">
             {tokenSymbol ? (
               <div className="flex flex-row h-20">
                 <img className="w-10 h-10 my-5" src={`/token/${tokenSymbol.toLowerCase()}.svg`} />
